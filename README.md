@@ -1,10 +1,10 @@
-# web3.php
+# web3
 
-[![PHP](https://github.com/coccoc/web3.php/actions/workflows/php.yml/badge.svg)](https://github.com/coccoc/web3.php/actions/workflows/php.yml)
-[![Build Status](https://travis-ci.org/coccoc/web3.php.svg?branch=master)](https://travis-ci.org/coccoc/web3.php)
-[![codecov](https://codecov.io/gh/coccoc/web3.php/branch/master/graph/badge.svg)](https://codecov.io/gh/coccoc/web3.php)
-[![Join the chat at https://gitter.im/web3-php/web3.php](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg)](https://gitter.im/web3-php/web3.php)
-[![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/coccoc/web3.php/blob/master/LICENSE)
+[![PHP](https://github.com/coccoc/web3/actions/workflows/php.yml/badge.svg)](https://github.com/coccoc/web3/actions/workflows/php.yml)
+[![Build Status](https://travis-ci.org/coccoc/web3.svg?branch=master)](https://travis-ci.org/coccoc/web3)
+[![codecov](https://codecov.io/gh/coccoc/web3/branch/master/graph/badge.svg)](https://codecov.io/gh/coccoc/web3)
+[![Join the chat at https://gitter.im/web3-php/web3](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg)](https://gitter.im/web3-php/web3)
+[![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/coccoc/web3/blob/master/LICENSE)
 
 
 A php interface for interacting with the Ethereum blockchain and ecosystem.
@@ -18,13 +18,13 @@ Set minimum stability to dev
 
 Then
 ```
-composer require coccoc/web3.php dev-master
+composer require coccoc/web3 dev-master
 ```
 
 Or you can add this line in composer.json
 
 ```
-"coccoc/web3.php": "dev-master"
+"coccoc/web3": "dev-master"
 ```
 
 
@@ -32,16 +32,16 @@ Or you can add this line in composer.json
 
 ### New instance
 ```php
-use Coccoc\Web3;
+use Web3\Web3;
 
 $web3 = new Web3('http://localhost:8545');
 ```
 
 ### Using provider
 ```php
-use Coccoc\Web3;
-use Coccoc\Providers\HttpProvider;
-use Coccoc\RequestManagers\HttpRequestManager;
+use Web3\Web3;
+use Web3\Providers\HttpProvider;
+use Web3\RequestManagers\HttpRequestManager;
 
 $web3 = new Web3(new HttpProvider(new HttpRequestManager('http://localhost:8545')));
 
@@ -217,7 +217,7 @@ If you are using docker as development machain, you can try [ethdock](https://gi
 
 1. Clone the repo and install packages.
 ```
-git clone https://github.com/coccoc/web3.php.git && cd web3.php && composer install
+git clone https://github.com/coccoc/web3.git && cd web3.php && composer install
 ```
 
 2. Run test script.
@@ -229,10 +229,10 @@ vendor/bin/phpunit
 
 1. Clone the repo and run docker container.
 ```
-git clone https://github.com/coccoc/web3.php.git
+git clone https://github.com/coccoc/web3.git
 ```
 
-2. Copy web3.php to web3.php/docker/app directory and start container.
+2. Copy web3 to web3/docker/app directory and start container.
 ```
 cp files docker/app && docker-compose up -d php ganache
 ```
@@ -286,9 +286,9 @@ Todo.
 
 # Contribution
 
-Thank you to all the people who already contributed to web3.php!
-<a href="https://github.com/coccoc/web3.php/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=coccoc/web3.php" />
+Thank you to all the people who already contributed to web3!
+<a href="https://github.com/coccoc/web3/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=coccoc/web3" />
 </a>
 
 # License

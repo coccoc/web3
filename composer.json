@@ -1,5 +1,5 @@
 {
-    "name": "coccoc/web3.php",
+    "name": "coccoc/web3",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",

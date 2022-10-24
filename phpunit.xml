@@ -9,7 +9,7 @@
          processIsolation="false"
          stopOnFailure="false">
 
-    <testsuite name="Web3.php unit test">
+    <testsuite name="Web3 unit test">
         <directory suffix="Test.php">./test/unit</directory>
     </testsuite>
 
